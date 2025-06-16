@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-06-16T16:50:15.968881" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tests" source="C:\Users\mikec\OneDrive\Videos\Desktop\Compass\compass-resume\Documentos\Sprint 7\Semana 14\serverest-testes-web\tests\login_tests.robot">
+<test id="s1-t1" name="CT000 - Cadastro de novo usuário" line="7">
+<kw name="Open Browser" owner="base">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-16T16:50:16.156621" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\9c26eb9c-0288-4ee2-8380-2ecfc55976d8"}</msg>
+<msg time="2025-06-16T16:50:16.178665" level="INFO">Starting Browser process C:\Users\mikec\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:58417</msg>
+<msg time="2025-06-16T16:50:17.490241" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\9c26eb9c-0288-4ee2-8380-2ecfc55976d8"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-16T16:50:16.155804" elapsed="1.334670"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-16T16:50:19.628020" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev/</msg>
+<msg time="2025-06-16T16:50:19.628103" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://compassuolfront.serverest.dev/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-16T16:50:17.490766" elapsed="2.137506"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:16.154903" elapsed="3.473543"/>
+</kw>
+<kw name="Generate Random User Data" owner="login_keywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-16T16:50:19.629686" level="INFO">${rand} = 4996</msg>
+<var>${rand}</var>
+<arg>random.randint(1000, 9999)</arg>
+<arg>modules=random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.629216" elapsed="0.000495"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-06-16T16:50:19.630014" level="INFO">${email} = user4996@teste.com</msg>
+<var>${email}</var>
+<arg>user${rand}@teste.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.629816" elapsed="0.000221"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-06-16T16:50:19.630688" level="INFO">${EMAIL_CAD} = user4996@teste.com</msg>
+<arg>${EMAIL_CAD}</arg>
+<arg>${email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.630137" elapsed="0.000586"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-06-16T16:50:19.631248" level="INFO">${PASS_CAD} = 123456</msg>
+<arg>${PASS_CAD}</arg>
+<arg>123456</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.630817" elapsed="0.000464"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-06-16T16:50:19.631840" level="INFO">${NAME_CAD} = Robot Teste 4996</msg>
+<arg>${NAME_CAD}</arg>
+<arg>Robot Teste ${rand}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.631370" elapsed="0.000511"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:19.628803" elapsed="0.003131"/>
+</kw>
+<kw name="Register New User" owner="login_keywords">
+<kw name="Go To Login Page" owner="base">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:19.657979" level="INFO">Waited for Element with selector text=login at state visible</msg>
+<arg>text=login</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.632544" elapsed="0.025598"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:19.658770" level="INFO">Clicks the element 'text=login'.</msg>
+<arg>text=login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.658314" elapsed="0.103065"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:19.767887" level="INFO">Waited for Element with selector id=email at state visible</msg>
+<arg>id=email</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.761633" elapsed="0.006445"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:19.632358" elapsed="0.135868"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:19.768968" level="INFO">Clicks the element 'text=Cadastre-se'.</msg>
+<arg>text=Cadastre-se</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.768415" elapsed="0.027380"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:19.802096" level="INFO">Waited for Element with selector id=nome at state visible</msg>
+<arg>id=nome</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.796116" elapsed="0.006112"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-16T16:50:19.802830" level="INFO">Fills the text 'Robot Teste 4996' in the given field.</msg>
+<arg>id=nome</arg>
+<arg>${NAME_CAD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.802387" elapsed="0.015079"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-16T16:50:19.818387" level="INFO">Fills the text 'user4996@teste.com' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL_CAD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.817734" elapsed="0.014080"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-16T16:50:19.832773" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASS_CAD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.832097" elapsed="0.011474"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:19.844417" level="INFO">Clicks the element 'data-testid=checkbox'.</msg>
+<arg>data-testid=checkbox</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.843800" elapsed="0.019804"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:19.864734" level="INFO">Clicks the element 'data-testid=cadastrar'.</msg>
+<arg>data-testid=cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.864034" elapsed="0.023421"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:20.709739" level="INFO">Waited for Element with selector css=a.alert-link at state visible</msg>
+<arg>css=a.alert-link</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:19.887722" elapsed="0.822219"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-16T16:50:20.728517" level="INFO">Text: 'Cadastro realizado com sucesso'</msg>
+<msg time="2025-06-16T16:50:20.728680" level="INFO">${msg} = Cadastro realizado com sucesso</msg>
+<var>${msg}</var>
+<arg>css=a.alert-link</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:20.710148" elapsed="0.018563"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${msg}</arg>
+<arg>Cadastro realizado com sucesso</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-06-16T16:50:20.728934" elapsed="0.000318"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:19.632137" elapsed="1.097191"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-06-16T16:50:20.901259" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-16T16:50:20.729578" elapsed="0.171838"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:16.154171" elapsed="4.747501"/>
+</test>
+<test id="s1-t2" name="CT001 - Login com sucesso (usuário recém-cadastrado)" line="13">
+<kw name="Open Browser" owner="base">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-16T16:50:20.928733" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\cb6e488c-2d83-4b63-ba2e-b22c3679722c"}</msg>
+<msg time="2025-06-16T16:50:21.097634" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\cb6e488c-2d83-4b63-ba2e-b22c3679722c"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-16T16:50:20.928142" elapsed="0.169706"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-16T16:50:23.173400" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev/</msg>
+<msg time="2025-06-16T16:50:23.173505" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://compassuolfront.serverest.dev/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-16T16:50:21.098251" elapsed="2.075447"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:20.927817" elapsed="2.246032"/>
+</kw>
+<kw name="Go To Login Page" owner="base">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:23.195459" level="INFO">Waited for Element with selector text=login at state visible</msg>
+<arg>text=login</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.174827" elapsed="0.020987"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:23.196575" level="INFO">Clicks the element 'text=login'.</msg>
+<arg>text=login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.196088" elapsed="0.094291"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:23.294660" level="INFO">Waited for Element with selector id=email at state visible</msg>
+<arg>id=email</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.290570" elapsed="0.004220"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:23.174336" elapsed="0.120566"/>
+</kw>
+<kw name="Fill Login Form" owner="login_keywords">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:23.299339" level="INFO">Waited for Element with selector id=email at state visible</msg>
+<arg>id=email</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.295612" elapsed="0.003839"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-16T16:50:23.300023" level="INFO">Fills the text 'user4996@teste.com' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.299597" elapsed="0.011882"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-16T16:50:23.312455" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.311771" elapsed="0.011007"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:23.323553" level="INFO">Clicks the element 'data-testid=entrar'.</msg>
+<arg>data-testid=entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.323077" elapsed="0.024213"/>
+</kw>
+<arg>${EMAIL_CAD}</arg>
+<arg>${PASS_CAD}</arg>
+<status status="PASS" start="2025-06-16T16:50:23.295184" elapsed="0.052226"/>
+</kw>
+<kw name="Validate Successful Login" owner="login_keywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="URL Should Contain Either" owner="login_keywords">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-06-16T16:50:23.351206" level="INFO">${url} = https://compassuolfront.serverest.dev/login</msg>
+<var>${url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.348768" elapsed="0.002471"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2025-06-16T16:50:23.351841" level="FAIL">'https://compassuolfront.serverest.dev/login' does not contain '/admin/home'</msg>
+<arg>${url}</arg>
+<arg>${opt1}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2025-06-16T16:50:23.351587" elapsed="0.000402">'https://compassuolfront.serverest.dev/login' does not contain '/admin/home'</status>
+</kw>
+<msg time="2025-06-16T16:50:23.352165" level="INFO">${match1} = False</msg>
+<var>${match1}</var>
+<arg>Should Contain</arg>
+<arg>${url}</arg>
+<arg>${opt1}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.351381" elapsed="0.000807"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2025-06-16T16:50:23.352633" level="FAIL">'https://compassuolfront.serverest.dev/login' does not contain '/produtos'</msg>
+<arg>${url}</arg>
+<arg>${opt2}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2025-06-16T16:50:23.352452" elapsed="0.000240">'https://compassuolfront.serverest.dev/login' does not contain '/produtos'</status>
+</kw>
+<msg time="2025-06-16T16:50:23.352763" level="INFO">${match2} = False</msg>
+<var>${match2}</var>
+<arg>Should Contain</arg>
+<arg>${url}</arg>
+<arg>${opt2}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.352287" elapsed="0.000502"/>
+</kw>
+<kw name="Run Keyword Unless" owner="BuiltIn">
+<msg time="2025-06-16T16:50:23.352944" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<kw name="Fail" owner="BuiltIn">
+<msg time="2025-06-16T16:50:23.353675" level="FAIL">URL 'https://compassuolfront.serverest.dev/login' não contém '/admin/home' nem '/produtos'</msg>
+<arg>URL '${url}' não contém '${opt1}' nem '${opt2}'</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="FAIL" start="2025-06-16T16:50:23.353397" elapsed="0.000339">URL 'https://compassuolfront.serverest.dev/login' não contém '/admin/home' nem '/produtos'</status>
+</kw>
+<arg>${match1} or ${match2}</arg>
+<arg>Fail</arg>
+<arg>URL '${url}' não contém '${opt1}' nem '${opt2}'</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<status status="FAIL" start="2025-06-16T16:50:23.352880" elapsed="0.000914">URL 'https://compassuolfront.serverest.dev/login' não contém '/admin/home' nem '/produtos'</status>
+</kw>
+<arg>/admin/home</arg>
+<arg>/produtos</arg>
+<status status="FAIL" start="2025-06-16T16:50:23.348463" elapsed="0.005461">URL 'https://compassuolfront.serverest.dev/login' não contém '/admin/home' nem '/produtos'</status>
+</kw>
+<kw name="URL Should Contain Either" owner="login_keywords">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-06-16T16:50:24.357671" level="INFO">${url} = https://compassuolfront.serverest.dev/admin/home</msg>
+<var>${url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-06-16T16:50:24.355024" elapsed="0.002692"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>${opt1}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-06-16T16:50:24.358125" elapsed="0.000210"/>
+</kw>
+<msg time="2025-06-16T16:50:24.358425" level="INFO">${match1} = True</msg>
+<var>${match1}</var>
+<arg>Should Contain</arg>
+<arg>${url}</arg>
+<arg>${opt1}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-06-16T16:50:24.357892" elapsed="0.000559"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2025-06-16T16:50:24.358954" level="FAIL">'https://compassuolfront.serverest.dev/admin/home' does not contain '/produtos'</msg>
+<arg>${url}</arg>
+<arg>${opt2}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2025-06-16T16:50:24.358738" elapsed="0.000283">'https://compassuolfront.serverest.dev/admin/home' does not contain '/produtos'</status>
+</kw>
+<msg time="2025-06-16T16:50:24.359101" level="INFO">${match2} = False</msg>
+<var>${match2}</var>
+<arg>Should Contain</arg>
+<arg>${url}</arg>
+<arg>${opt2}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-06-16T16:50:24.358558" elapsed="0.000566"/>
+</kw>
+<kw name="Run Keyword Unless" owner="BuiltIn">
+<msg time="2025-06-16T16:50:24.359301" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<arg>${match1} or ${match2}</arg>
+<arg>Fail</arg>
+<arg>URL '${url}' não contém '${opt1}' nem '${opt2}'</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<status status="PASS" start="2025-06-16T16:50:24.359222" elapsed="0.000456"/>
+</kw>
+<arg>/admin/home</arg>
+<arg>/produtos</arg>
+<status status="PASS" start="2025-06-16T16:50:24.354542" elapsed="0.005218"/>
+</kw>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>URL Should Contain Either</arg>
+<arg>/admin/home</arg>
+<arg>/produtos</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-16T16:50:23.348107" elapsed="1.011704"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:23.347731" elapsed="1.012140"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-06-16T16:50:24.555663" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-16T16:50:24.360040" elapsed="0.195803"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:20.925987" elapsed="3.630141"/>
+</test>
+<test id="s1-t3" name="CT002 - Login com senha incorreta" line="20">
+<kw name="Open Browser" owner="base">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-16T16:50:24.585417" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\1ba27a02-f993-48a9-b79e-5dec2dd2d5a0"}</msg>
+<msg time="2025-06-16T16:50:24.762261" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\1ba27a02-f993-48a9-b79e-5dec2dd2d5a0"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-16T16:50:24.584884" elapsed="0.177618"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-16T16:50:26.977959" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev/</msg>
+<msg time="2025-06-16T16:50:26.978041" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://compassuolfront.serverest.dev/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-16T16:50:24.762742" elapsed="2.215456"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:24.584599" elapsed="2.393721"/>
+</kw>
+<kw name="Go To Login Page" owner="base">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:26.998435" level="INFO">Waited for Element with selector text=login at state visible</msg>
+<arg>text=login</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:26.979083" elapsed="0.019587"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:26.999631" level="INFO">Clicks the element 'text=login'.</msg>
+<arg>text=login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:26.999048" elapsed="0.109125"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:27.113750" level="INFO">Waited for Element with selector id=email at state visible</msg>
+<arg>id=email</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:27.108402" elapsed="0.005552"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:26.978677" elapsed="0.135409"/>
+</kw>
+<kw name="Fill Login Form" owner="login_keywords">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:27.119271" level="INFO">Waited for Element with selector id=email at state visible</msg>
+<arg>id=email</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:27.114819" elapsed="0.004591"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-16T16:50:27.119978" level="INFO">Fills the text 'user4996@teste.com' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:27.119554" elapsed="0.013745"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-16T16:50:27.134294" level="INFO">Fills the text 'senha_errada' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:27.133584" elapsed="0.016242"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:27.150738" level="INFO">Clicks the element 'data-testid=entrar'.</msg>
+<arg>data-testid=entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:27.150103" elapsed="0.028014"/>
+</kw>
+<arg>${EMAIL_CAD}</arg>
+<arg>senha_errada</arg>
+<status status="PASS" start="2025-06-16T16:50:27.114373" elapsed="0.063900"/>
+</kw>
+<kw name="Validate Specific Error Message" owner="login_keywords">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:28.002667" level="INFO">Waited for Element with selector xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="Email e/ou senha inválidos"] at state visible</msg>
+<arg>xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="${mensagem}"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:27.179061" elapsed="0.823828"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-16T16:50:28.018504" level="INFO">Text: 'Email e/ou senha inválidos'</msg>
+<msg time="2025-06-16T16:50:28.018654" level="INFO">${texto} = Email e/ou senha inválidos</msg>
+<var>${texto}</var>
+<arg>xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="${mensagem}"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:28.003081" elapsed="0.015603"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${texto}</arg>
+<arg>${mensagem}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-06-16T16:50:28.018896" elapsed="0.000288"/>
+</kw>
+<arg>Email e/ou senha inválidos</arg>
+<status status="PASS" start="2025-06-16T16:50:27.178645" elapsed="0.840612"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-06-16T16:50:28.192284" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-16T16:50:28.019470" elapsed="0.173002"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:24.582854" elapsed="3.609889"/>
+</test>
+<test id="s1-t4" name="CT003 - Login com campos vazios" line="27">
+<kw name="Open Browser" owner="base">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-16T16:50:28.218683" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\eb93e6f8-9b29-43a4-b260-485ac9c3dc69"}</msg>
+<msg time="2025-06-16T16:50:28.385420" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\mikec\\OneDrive\\Videos\\Desktop\\Compass\\compass-resume\\Documentos\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\browser\\traces\\temp\\eb93e6f8-9b29-43a4-b260-485ac9c3dc69"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-16T16:50:28.218078" elapsed="0.167647"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-16T16:50:30.264143" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev/</msg>
+<msg time="2025-06-16T16:50:30.264255" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://compassuolfront.serverest.dev/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-16T16:50:28.386009" elapsed="1.878473"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:28.217545" elapsed="2.047121"/>
+</kw>
+<kw name="Go To Login Page" owner="base">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:30.285900" level="INFO">Waited for Element with selector text=login at state visible</msg>
+<arg>text=login</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:30.265716" elapsed="0.020377"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:30.287179" level="INFO">Clicks the element 'text=login'.</msg>
+<arg>text=login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:30.286342" elapsed="0.092943"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:30.384195" level="INFO">Waited for Element with selector id=email at state visible</msg>
+<arg>id=email</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:30.379477" elapsed="0.004864"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:30.265094" elapsed="0.119355"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-16T16:50:30.385173" level="INFO">Clicks the element 'data-testid=entrar'.</msg>
+<arg>data-testid=entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:30.384719" elapsed="0.023895"/>
+</kw>
+<kw name="Validate Specific Error Message" owner="login_keywords">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:31.247432" level="INFO">Waited for Element with selector xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="Email é obrigatório"] at state visible</msg>
+<arg>xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="${mensagem}"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:30.410045" elapsed="0.837550"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-16T16:50:31.262230" level="INFO">Text: 'Email é obrigatório'</msg>
+<msg time="2025-06-16T16:50:31.262388" level="INFO">${texto} = Email é obrigatório</msg>
+<var>${texto}</var>
+<arg>xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="${mensagem}"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:31.247785" elapsed="0.014633"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${texto}</arg>
+<arg>${mensagem}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-06-16T16:50:31.262603" elapsed="0.000311"/>
+</kw>
+<arg>Email é obrigatório</arg>
+<status status="PASS" start="2025-06-16T16:50:30.409281" elapsed="0.853707"/>
+</kw>
+<kw name="Validate Specific Error Message" owner="login_keywords">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-16T16:50:31.267811" level="INFO">Waited for Element with selector xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="Password é obrigatório"] at state visible</msg>
+<arg>xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="${mensagem}"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-16T16:50:31.263562" elapsed="0.004377"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-16T16:50:31.276765" level="INFO">Text: 'Password é obrigatório'</msg>
+<msg time="2025-06-16T16:50:31.276891" level="INFO">${texto} = Password é obrigatório</msg>
+<var>${texto}</var>
+<arg>xpath=//div[@class="alert alert-secondary alert-dismissible"]/span[normalize-space(.)="${mensagem}"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-16T16:50:31.268087" elapsed="0.008827"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${texto}</arg>
+<arg>${mensagem}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-06-16T16:50:31.277067" elapsed="0.000258"/>
+</kw>
+<arg>Password é obrigatório</arg>
+<status status="PASS" start="2025-06-16T16:50:31.263255" elapsed="0.014130"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-06-16T16:50:31.479688" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-16T16:50:31.277591" elapsed="0.202274"/>
+</kw>
+<status status="PASS" start="2025-06-16T16:50:28.215431" elapsed="3.264679"/>
+</test>
+<status status="PASS" start="2025-06-16T16:50:15.970182" elapsed="15.532234"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Tests" id="s1" pass="4" fail="0" skip="0">Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-06-16T16:50:16.134031" level="WARN">Imported resource file 'C:\Users\mikec\OneDrive\Videos\Desktop\Compass\compass-resume\Documentos\Sprint 7\Semana 14\serverest-testes-web\resources\carrinho_keywords.resource' is empty.</msg>
+<msg time="2025-06-16T16:50:16.142195" level="ERROR">Error in file 'C:\Users\mikec\OneDrive\Videos\Desktop\Compass\compass-resume\Documentos\Sprint 7\Semana 14\serverest-testes-web\resources\produtos_keywords.resource' on line 6: Resource file 'base.robot' does not exist.</msg>
+<msg time="2025-06-16T16:50:16.146993" level="WARN">Imported resource file 'C:\Users\mikec\OneDrive\Videos\Desktop\Compass\compass-resume\Documentos\Sprint 7\Semana 14\serverest-testes-web\resources\usuarios_keywords.resource' is empty.</msg>
+<msg time="2025-06-16T16:50:23.352944" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg time="2025-06-16T16:50:24.359301" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+</errors>
+</robot>
