@@ -13,7 +13,7 @@ Cada integrante da squad ficou responsável por implementar **ao menos dois caso
 - [Robot Framework](https://robotframework.org/)
 - [Browser Library](https://github.com/MarketSquare/robotframework-browser)
 - [Python](https://www.python.org/)
-- VS Code
+- [VS Code](https://code.visualstudio.com/)
 - Aplicação alvo dos testes: [ServeRest - Front-end](https://compassuolfront.serverest.dev/)
 
 ## 🧪 Estrutura dos Testes
@@ -35,7 +35,7 @@ Cada cenário foi implementado com foco em boas práticas de automação, como:
 
 - [Ádony Lagares](https://github.com/adony-lagares)
 - [Ana Carolina Rosa](https://github.com/CacauRosa)
-- [Anna BeatrizSantoro](https://github.com/annasantoro-glitch)
+- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch)
 - [Marcos Paulo](https://github.com/Marcosdev03)
 
 ## 📄 Considerações Finais
