@@ -1,11 +1,11 @@
 *** Settings ***
 Library        Browser
 
-Resource       ../variables/variables.robot
-Resource       carrinho_keywords.robot
-Resource       login_keywords.robot
-Resource       produtos_keywords.robot
-Resource       usuarios_keywords.robot
+Resource       ../variables/variables.resource
+Resource       carrinho_keywords.resource
+Resource       login_keywords.resource
+Resource       produtos_keywords.resource
+Resource       usuarios_keywords.resource
 
 *** Keywords ***
 Start Session
