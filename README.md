@@ -1,4 +1,4 @@
-# 🧪 Testes Automatizados com Robot eXpress - ServeRest
+# 🧪 Testes Automatizados Web com Robot eXpress - ServeRest
 
 Este repositório contém a implementação de testes automatizados Web para a aplicação [ServeRest](https://compassuolfront.serverest.dev/), desenvolvida em squad (Squad 1 - Gotham) durante o estágio de QA da Compass UOL.
 
