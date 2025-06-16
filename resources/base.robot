@@ -1,0 +1,1 @@
+# Keywords de Uso Global
