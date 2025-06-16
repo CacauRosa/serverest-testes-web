@@ -1,1 +1,1 @@
-# Keywords de Uso Global
+# Arquivo para keywords de uso global
