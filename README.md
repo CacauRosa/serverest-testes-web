@@ -28,15 +28,16 @@ Os testes foram organizados em arquivos `.robot`, cada um contendo cenários esp
 Cada cenário foi implementado com foco em boas práticas de automação, como:
 
 - Clareza nas keywords
+- ///keywords em inglês / test cases em português
 - Reutilização de trechos comuns
 - Organização por área funcional
 
 ## 👥 Participantes da Squad Gotham
 
-- [Ádony Lagares](https://github.com/adony-lagares)
-- [Ana Carolina Rosa](https://github.com/CacauRosa)
-- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch)
-- [Marcos Paulo](https://github.com/Marcosdev03)
+- [Ádony Lagares](https://github.com/adony-lagares) - Login
+- [Ana Carolina Rosa](https://github.com/CacauRosa) - Produtos
+- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) - Usuários
+- [Marcos Paulo](https://github.com/Marcosdev03) - Carrinhos
 
 ## 📄 Considerações Finais
 
