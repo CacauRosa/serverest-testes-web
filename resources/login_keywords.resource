@@ -4,6 +4,11 @@ Resource             ../resources/base.resource
 
 *** Keywords ***
 
+Go To Login Page
+    Wait For Elements State    text=login    visible
+    Click    text=login
+    Wait For Elements State    id=email    visible
+
 Fill Login Form
     [Arguments]    ${email}    ${password}
     Wait For Elements State    id=email        visible
