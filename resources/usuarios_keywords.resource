@@ -22,7 +22,7 @@ Open User Registration Page
 
 Open Registration Page And Form
     Open User Registration Page
-    Wait For Elements State    ${FIELD_NAME}    visible    timeout=60s
+    Wait For Elements State    ${FIELD_NAME}    visible    timeout=15s
 
 # === Form Helpers ===
 
