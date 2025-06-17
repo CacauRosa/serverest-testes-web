@@ -1,6 +1,7 @@
 *** Settings***
 Documentation        Arquivo para keywords do endpoint /produtos
-Resource       base.resource
+Resource             base.resource
+Resource             login_keywords.resource
 
 *** Keywords ***
 
@@ -54,4 +55,4 @@ Alert should be
     [Arguments]        ${expected_text}
 
     Wait For Elements State        xpath=//span[text()="${expected_text}"]
-    ...                            visible   
+    ...                            visible
