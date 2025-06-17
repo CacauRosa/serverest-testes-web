@@ -59,9 +59,9 @@ Cada cenário foi implementado com foco em boas práticas de automação, como:
 
 ## Participantes da Squad Gotham
 
+- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) – Usuários
 - [Ádony Lagares](https://github.com/adony-lagares) – Login
 - [Ana Carolina Rosa](https://github.com/CacauRosa) – Produtos
-- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) – Usuários
 - [Marcos Paulo](https://github.com/Marcosdev03) – Produtos
 
 ---
