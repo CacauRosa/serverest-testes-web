@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation        Cenários de testes de produtos
-
-Resource             ../resources/base.resource
+Resource             ../resources/produtos_keywords.resource
 
 Test Setup           Start Session
 Test Teardown        Take Screenshot
