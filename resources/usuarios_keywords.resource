@@ -10,24 +10,6 @@ ${DELETE_BUTTON}      id=delete-user
 
 # === User Scenarios ===
 
-Generate Random User Data
-    ${rand}=       Evaluate    random.randint(1000, 9999)    modules=random
-    ${email}=      Set Variable    user${rand}@teste.com
-    Set Suite Variable    ${EMAIL_CAD}    ${email}
-    Set Suite Variable    ${PASS_CAD}     123456
-    Set Suite Variable    ${NAME_CAD}     Robot Teste ${rand}
-
-Register New User
-    Generate Random User Data
-    Open Registration Page And Form
-    Fill Registration Form    ${NAME_CAD}    ${EMAIL_CAD}    ${PASS_CAD}
-    Click    data-testid=checkbox
-    Submit Registration
-    Wait For Elements State    css=a.alert-link    visible    timeout=10s
-    ${msg}=    Get Text    css=a.alert-link
-    Should Be Equal As Strings  ${msg}    Cadastro realizado com sucesso
-    Fechar Navegador
-
 Register User With Duplicate Email
     Generate Random User Data
     # Primeiro cadastro com email único
