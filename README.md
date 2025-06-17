@@ -1,12 +1,31 @@
 # Testes Automatizados Web com Robot eXpress - ServeRest
 
-Este repositório contém a implementação de testes automatizados Web para a aplicação [ServeRest](https://compassuolfront.serverest.dev/), desenvolvida em squad (Squad 1 - Gotham) durante o estágio de QA da Compass UOL.
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Sprint](https://img.shields.io/badge/Sprint-07-blue)
+![Tech](https://img.shields.io/badge/Robot_Framework-✓-green)
+![Library](https://img.shields.io/badge/Browser_Library-✓-orange)
+
+> Repositório da Squad 1 — Gotham | Compass UOL — Estágio QA
+
+---
+
+## Índice
+
+- [Descrição da Atividade](#descrição-da-atividade)
+- [Principais Ferramentas e Tecnologias Utilizadas](#principais-ferramentas-e-tecnologias-utilizadas)
+- [Estrutura dos Testes](#estrutura-dos-testes)
+- [Participantes da Squad Gotham](#participantes-da-squad-gotham)
+- [Considerações Finais](#considerações-finais)
+
+---
 
 ## Descrição da Atividade
 
 Com base nos conteúdos estudados ao longo do curso Robot eXpress e nos exercícios práticos realizados, esta atividade teve como objetivo aplicar os conhecimentos adquiridos na automação de testes Web utilizando a ferramenta **Robot Framework**.
 
 Cada integrante da squad ficou responsável por implementar **ao menos dois casos de teste** utilizando os recursos abordados no curso.
+
+---
 
 ## Principais Ferramentas e Tecnologias Utilizadas
 
@@ -15,6 +34,8 @@ Cada integrante da squad ficou responsável por implementar **ao menos dois caso
 - [Python](https://www.python.org/)
 - [VS Code](https://code.visualstudio.com/)
 - Aplicação alvo dos testes: [ServeRest - Front-end](https://compassuolfront.serverest.dev/)
+
+---
 
 ## Estrutura dos Testes
 
@@ -25,21 +46,25 @@ Os testes foram organizados em arquivos `.robot`, cada um contendo cenários esp
 - Produtos
 - Carrinhos
 
-**Obs**: O endpoint /carrinho está em construção na aplicação web do ServeRest no momento da realização dos testes. Portanto, não é possível automatizá-la.
+**Obs**: O endpoint `/carrinho` está em construção na aplicação web do ServeRest no momento da realização dos testes. Portanto, não é possível automatizá-la.
 
 Cada cenário foi implementado com foco em boas práticas de automação, como:
 
-- Clareza nas keywords
-- ///keywords em inglês / test cases em português
+- Clareza nas `keywords`
+- `keywords` em **inglês** e `test cases` em **português**
 - Reutilização de trechos comuns
 - Organização por área funcional
 
+---
+
 ## Participantes da Squad Gotham
 
-- [Ádony Lagares](https://github.com/adony-lagares) - Login
-- [Ana Carolina Rosa](https://github.com/CacauRosa) - Produtos
-- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) - Usuários
-- [Marcos Paulo](https://github.com/Marcosdev03) - Produtos
+- [Ádony Lagares](https://github.com/adony-lagares) – Login
+- [Ana Carolina Rosa](https://github.com/CacauRosa) – Produtos
+- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) – Usuários
+- [Marcos Paulo](https://github.com/Marcosdev03) – Produtos
+
+---
 
 ## Considerações Finais
 
