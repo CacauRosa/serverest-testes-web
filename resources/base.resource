@@ -59,4 +59,3 @@ Register New User
     Wait For Elements State    css=a.alert-link    visible    timeout=10s
     ${msg}=    Get Text    css=a.alert-link
     Should Be Equal As Strings  ${msg}    Cadastro realizado com sucesso
-    Fechar Navegador
