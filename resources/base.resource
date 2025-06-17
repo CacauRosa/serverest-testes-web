@@ -4,14 +4,33 @@ Library          Browser
 
 *** Variables ***
 ${BASE_URL}        https://compassuolfront.serverest.dev
+${USER_PAGE_URL}      https://compassuolfront.serverest.dev/cadastrarusuarios
+${FIELD_NAME}         id=nome
+${FIELD_EMAIL}        id=email
+${FIELD_PASSWORD}     id=password
+${BTN_REGISTER}       data-testid=cadastrar
+${ALERT_MESSAGE}      css=.alert
 
 *** Keywords ***
+
+# === Session Settings ===
+
 Start Session
     New Browser     browser=chromium      headless=False
     New Page        ${BASE_URL}
 
 Fechar Navegador
     Close Browser    ALL
+
+# === Navigation ===
+
+Open User Registration Page
+    Start Session
+    Go To    ${USER_PAGE_URL}
+
+Open Registration Page And Form
+    Open User Registration Page
+    Wait For Elements State    ${FIELD_NAME}    visible    timeout=15s
 
 # === Form Helpers ===
 
