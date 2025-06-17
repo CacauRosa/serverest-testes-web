@@ -1,11 +1,9 @@
 *** Settings ***
-Library        Browser
+Documentation    Arquivo de armazenamento de keywords globais
+Library          Browser
 
-Resource       ../variables/variables.resource
-Resource       carrinho_keywords.resource
-Resource       login_keywords.resource
-Resource       produtos_keywords.resource
-Resource       usuarios_keywords.resource
+*** Variables ***
+${BASE_URL}        https://compassuolfront.serverest.dev
 
 *** Keywords ***
 Start Session
