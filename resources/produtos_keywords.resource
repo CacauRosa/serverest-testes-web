@@ -1,13 +1,9 @@
 *** Settings***
 Documentation        Arquivo para keywords do endpoint /produtos
-
-Library        Browser
-Library        RequestsLibrary
-Library        FakerLibrary
-
 Resource       base.resource
 
 *** Keywords ***
+
 New User and Login
     Generate Random User Data
     Register New User
@@ -58,4 +54,4 @@ Alert should be
     [Arguments]        ${expected_text}
 
     Wait For Elements State        xpath=//span[text()="${expected_text}"]
-    ...                            visible        5
+    ...                            visible   
