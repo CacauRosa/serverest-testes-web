@@ -4,42 +4,9 @@ Library              Browser
 Resource             ../resources/base.resource
 
 *** Variables ***
-${USER_PAGE_URL}      https://compassuolfront.serverest.dev/cadastrarusuarios
-${FIELD_NAME}         id=nome
-${FIELD_EMAIL}        id=email
-${FIELD_PASSWORD}     id=password
-${BTN_REGISTER}       data-testid=cadastrar
-${ALERT_MESSAGE}      css=.alert
 ${DELETE_BUTTON}      id=delete-user
 
 *** Keywords ***
-
-# === Navigation ===
-
-Open User Registration Page
-    Start Session
-    Go To    ${USER_PAGE_URL}
-
-Open Registration Page And Form
-    Open User Registration Page
-    Wait For Elements State    ${FIELD_NAME}    visible    timeout=15s
-
-# === Form Helpers ===
-
-Fill Registration Form
-    [Arguments]    ${nome}    ${email}    ${password}
-    Fill Text    ${FIELD_NAME}    ${nome}
-    Fill Text    ${FIELD_EMAIL}    ${email}
-    Fill Text    ${FIELD_PASSWORD}    ${password}
-
-Submit Registration
-    Click    ${BTN_REGISTER}
-
-Validate Alert Message
-    [Arguments]    ${expected_message}
-    Wait For Elements State    ${ALERT_MESSAGE}    visible
-    ${message}=    Get Text    ${ALERT_MESSAGE}
-    Should Contain    ${message}    ${expected_message}
 
 # === User Scenarios ===
 
