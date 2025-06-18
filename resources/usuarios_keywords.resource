@@ -1,10 +1,9 @@
 *** Settings ***
 Documentation        Base file with variables, keywords, and utility functions used in user functionality.
-Library              Browser
-Resource             ../resources/base.resource
+Resource             base.resource
 
 *** Variables ***
-${DELETE_BUTTON}      id=delete-user
+${BTN_LIST_USERS}       css=[data-testid="listar-usuarios"]
 
 *** Keywords ***
 
@@ -18,6 +17,7 @@ Register User With Duplicate Email
     Click    data-testid=checkbox
     Submit Registration
     Validate Alert Message    Cadastro realizado com sucesso
+    Take Screenshot
 
     # Segundo cadastro usando o mesmo email
     Open Registration Page And Form
@@ -26,7 +26,7 @@ Register User With Duplicate Email
     Click    data-testid=checkbox
     Submit Registration
     Validate Alert Message    Este email já está sendo usado
-    Fechar Navegador
+    Take Screenshot
 
 Register User Without Name
     Generate Random User Data
@@ -35,7 +35,7 @@ Register User Without Name
     Click    data-testid=checkbox
     Submit Registration
     Validate Alert Message    Nome é obrigatório
-    Fechar Navegador
+    Take Screenshot
 
 Register User Without Email
     Generate Random User Data
@@ -44,14 +44,11 @@ Register User Without Email
     Click    data-testid=checkbox
     Submit Registration
     Validate Alert Message    Email é obrigatório
-    Fechar Navegador
+    Take Screenshot
 
-Delete Registered User
-    Open Registration Page And Form
-    Fill Registration Form    ${NAME_CAD}    ${EMAIL_CAD}    ${PASS_CAD}
-    Click    data-testid=checkbox
-    Submit Registration
-    Wait For Elements State    ${DELETE_BUTTON}    visible
-    Click    ${DELETE_BUTTON}
-    Validate Alert Message    Usuário deletado com sucesso
+List All Users
+    Register New User
+    Wait For Elements State    ${BTN_LIST_USERS}    visible    timeout=15s
+    Click    ${BTN_LIST_USERS}
+    Take Screenshot
     Fechar Navegador
