@@ -1,19 +1,24 @@
 *** Settings ***
-Documentation        Arquivo de armazenamento de keywords para funcionalidade /login
-Resource             ../resources/base.resource
+Documentation        Base file with variables, keywords, and utility functions used in login functionality.
+Resource             base.resource
+Resource             usuarios_keywords.resource
 
 *** Keywords ***
 
+New Login User
+    Generate Random User Data
+    Register New User
+    Click    data-testid=logout
+
 Go To Login Page
-    Wait For Elements State    text=login    visible
-    Click    text=login
+    Start Session
     Wait For Elements State    id=email    visible
 
 Fill Login Form
-    [Arguments]    ${email}    ${password}
+    [Arguments]    ${EMAIL_CAD}    ${PASS_CAD}
     Wait For Elements State    id=email        visible
-    Fill Text    id=email        ${email}
-    Fill Text    id=password     ${password}
+    Fill Text    id=email        ${EMAIL_CAD}
+    Fill Text    id=password     ${PASS_CAD}
     Click        data-testid=entrar
 
 Validate Successful Login
@@ -24,7 +29,7 @@ URL Should Contain Either
     ${url}=    Get Url
     ${match1}=    Run Keyword And Return Status    Should Contain    ${url}    ${opt1}
     ${match2}=    Run Keyword And Return Status    Should Contain    ${url}    ${opt2}
-    Run Keyword Unless    ${match1} or ${match2}    Fail    URL '${url}' não contém '${opt1}' nem '${opt2}'
+    Run Keyword If   ${match1} or ${match2}    Fail    URL '${url}' não contém '${opt1}' nem '${opt2}'
 
 Validate Specific Error Message
     [Arguments]    ${mensagem}
