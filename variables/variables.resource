@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Variáveis globais e configurações de ambiente
+Documentation        Global variables and environment settings
 
 *** Variables ***
 ${BASE_URL}           https://compassuolfront.serverest.dev
