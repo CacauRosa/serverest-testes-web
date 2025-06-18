@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation        Base file with variables, keywords, and utility functions used in user functionality.
+
 Resource             base.resource
 
 *** Variables ***
