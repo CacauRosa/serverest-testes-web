@@ -1,6 +1,6 @@
 # Introdução
 
-Este documento apresenta a análise técnica (code review) do projeto de Automação Web utilizando Robot Framework desenvolvido pela **Squad 2 - QA-ntastic Five** como parte das atividades do estágio em QA da Compass UOL.  
+Este documento apresenta a análise técnica (code review) do [projeto de Automação Web utilizando Robot Framework desenvolvido pela **Squad 2 - QA-ntastic Five**](https://github.com/ThaisNogueiraB/serverest-robotframework-tests) como parte das atividades do estágio em QA da Compass UOL.  
 A análise foi conduzida pela **Squad 1 - Gotham**, responsável por revisar e avaliar o código com foco em boas práticas, qualidade estrutural e manutenibilidade.
 
 ---
