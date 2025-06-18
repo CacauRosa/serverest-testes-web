@@ -1,34 +1,32 @@
 *** Settings ***
-Library    Browser
-Resource   ../resources/base.resource
-Resource   ../resources/login_keywords.resource
+Documentation    
+Resource         ../resources/login_keywords.resource
+
+Suite Setup       Start Session
+Suite Teardown    Fechar Navegador
 
 *** Test Cases ***
-CT000 - Cadastro de novo usuário
-    Open Browser
-    Generate Random User Data
-    Register New User
-    Close Browser
 
 CT001 - Login com sucesso (usuário recém-cadastrado)
-    Open Browser
+    New Login User
     Go To Login Page
     Fill Login Form           ${EMAIL_CAD}    ${PASS_CAD}
     Validate Successful Login
-    Close Browser
+    Take Screenshot
+    Fechar Navegador
 
 CT002 - Login com senha incorreta
-    Open Browser
     Go To Login Page
     Fill Login Form           ${EMAIL_CAD}    senha_errada
     Validate Specific Error Message    Email e/ou senha inválidos
-    Close Browser
+    Take Screenshot 
+    Fechar Navegador
 
 CT003 - Login com campos vazios
-    Open Browser
     Go To Login Page
+    Fill Login Form           ${EMPTY}    ${EMPTY}
     Click                     data-testid=entrar
     Validate Specific Error Message    Email é obrigatório
     Validate Specific Error Message    Password é obrigatório
-    Close Browser
-
+    Take Screenshot
+    Fechar Navegador

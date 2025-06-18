@@ -1,8 +1,6 @@
 *** Settings ***
 Documentation        Cenários de testes de produtos
-
-Resource             ../resources/base.resource
-Library              Collections
+Resource             ../resources/produtos_keywords.resource
 
 Test Setup           Start Session
 Test Teardown        Take Screenshot
@@ -45,7 +43,7 @@ CT004 - Deve acessar página de cadastro a partir do menu de navegação
 
 CT005 - Deve cadastrar produto com sucesso
     [Tags]    sucesso_cadastro
-
+    
     New User and Login
 
     Go To With Button    css=a[data-testid=cadastrarProdutos]
@@ -75,7 +73,6 @@ CT006 - Não deve cadastrar produto com nome duplicado
     Submit Task Form For Product    ${product_data}
     Check If In Page                Cadastro de Produtos
     Alert should be                 Já existe produto com esse nome
-
 
 CT007 - Testar Busca de Produto Existente
     [Tags]    busca

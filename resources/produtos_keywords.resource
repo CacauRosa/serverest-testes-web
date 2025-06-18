@@ -1,13 +1,11 @@
 *** Settings***
-Documentation        Arquivo para keywords do endpoint /produtos
-
-Library        Browser
-Library        RequestsLibrary
-Library        FakerLibrary
-
-Resource       base.resource
+Documentation        Base file with variables, keywords, and utility functions used in products functionality.
+Resource             base.resource
+Resource             usuarios_keywords.resource
+Resource             login_keywords.resource
 
 *** Keywords ***
+
 New User and Login
     Generate Random User Data
     Register New User
@@ -15,13 +13,11 @@ New User and Login
 
 Go To With Button 
     [Arguments]    ${element}
-
     Wait For Elements State    ${element}    visible    5
     Click    ${element}
 
 Check If In Page
     [Arguments]    ${page_text}
-
     Browser.Get Text    css=h1    equal    ${page_text}
 
 Generate Random Product Data
@@ -56,6 +52,5 @@ Product Should Be Registered
 
 Alert should be
     [Arguments]        ${expected_text}
-
     Wait For Elements State        xpath=//span[text()="${expected_text}"]
-    ...                            visible        5
+    ...                            visible 
