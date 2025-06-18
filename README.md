@@ -14,6 +14,7 @@
 - [Descrição da Atividade](#descrição-da-atividade)
 - [Principais Ferramentas e Tecnologias Utilizadas](#principais-ferramentas-e-tecnologias-utilizadas)
 - [Estrutura dos Testes](#estrutura-dos-testes)
+- [Ambiente e Requisitos de Instalação](#ambiente-e-requisitos-de-instalação)
 - [Participantes da Squad Gotham](#participantes-da-squad-gotham)
 - [Considerações Finais](#considerações-finais)
 
@@ -46,7 +47,7 @@ Os testes foram organizados em arquivos `.robot`, cada um contendo cenários esp
 - Produtos
 - Carrinhos
 
-**Obs**: O endpoint `/carrinho` está em construção na aplicação web do ServeRest no momento da realização dos testes. Portanto, não é possível automatizá-la.
+**Obs**: O endpoint `/carrinho` está em construção na aplicação web do ServeRest no momento da realização dos testes. Portanto, não é possível automatizá-lo.
 
 Cada cenário foi implementado com foco em boas práticas de automação, como:
 
@@ -57,12 +58,57 @@ Cada cenário foi implementado com foco em boas práticas de automação, como:
 
 ---
 
+## Ambiente e Requisitos de Instalação
+
+Este projeto utiliza o `Robot Framework` com a `Browser Library` para testes automatizados na aplicação ServeRest.
+
+### Dependências
+
+**robotframework-browser**
+- **Versão:** 19.6.0
+- Integração entre Robot Framework e Playwright.
+- Suporte a múltiplos navegadores (Chromium, Firefox, WebKit)
+- Captura de screenshots, modo headless ou com GUI
+- Geração de relatórios detalhados
+
+**Robot Framework**
+- **Versão:** 7.3.1
+- Framework principal dos testes
+
+**RequestsLibrary**
+- **Versão:** 1.0.2
+- Permite testes de API integrados ao Robot
+
+**FakerLibrary**
+- **Versão:** 37.3.0
+- Geração de dados aleatórios para os testes
+
+### Instalação das dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### Inicialização dos navegadores (após instalar robotframework-browser)
+
+```bash
+rfbrowser init
+```
+
+### Notas Técnicas
+
+- O projeto segue o padrão **Page Object Model** para organização dos testes.
+- Os testes são executados no **Chromium** por padrão.
+- Os relatórios são armazenados na pasta `results`.
+
+---
+
 ## Participantes da Squad Gotham
 
-- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) – Usuários
-- [Ádony Lagares](https://github.com/adony-lagares) – Login
-- [Ana Carolina Rosa](https://github.com/CacauRosa) – Produtos
-- [Marcos Paulo](https://github.com/Marcosdev03) – Produtos
+- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) – Usuários  
+- [Ádony Lagares](https://github.com/adony-lagares) – Login  
+- [Ana Carolina Rosa](https://github.com/CacauRosa) – Produtos  
+- [Marcos Paulo](https://github.com/Marcosdev03) – Produtos  
 
 ---
 
