@@ -1,0 +1,390 @@
+{"level":30,"time":"2025-06-18T01:14:45.811Z","pid":15588,"hostname":"Hermes","msg":"Listening on 127.0.0.1:61302"}
+(node:15588) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-18T01:14:46.091Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-18T01:14:49.295Z","pid":15588,"hostname":"Hermes","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-06-18T01:14:49.298Z","pid":15588,"hostname":"Hermes","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-18T01:14:49.297Z","pid":15588,"hostname":"Hermes","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-18T01:14:49.313Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T01:14:49.314Z","pid":15588,"hostname":"Hermes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T01:14:49.417Z","pid":15588,"hostname":"Hermes","msg":"Changed active context"}
+{"level":30,"time":"2025-06-18T01:14:51.488Z","pid":15588,"hostname":"Hermes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T01:14:51.488Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:14:56.112Z","pid":15588,"hostname":"Hermes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T01:14:56.222Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:14:56.313Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:14:56.400Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:14:56.402Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:14:56.800Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T01:14:56.823Z","pid":15588,"hostname":"Hermes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T01:14:57.482Z","pid":15588,"hostname":"Hermes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T01:14:57.482Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:14:59.069Z","pid":15588,"hostname":"Hermes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T01:14:59.129Z","pid":15588,"hostname":"Hermes","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:00.023Z","pid":15588,"hostname":"Hermes","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:00.046Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:00.039Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:00.253Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:00.268Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:00.269Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:00.409Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:00.421Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:00.421Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T01:15:00.520Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:00.536Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:00.537Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T01:15:00.600Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:00.612Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:00.613Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=checkbox in page."}
+{"level":30,"time":"2025-06-18T01:15:00.985Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:01.001Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:01.001Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T01:15:01.133Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:01.148Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:01.148Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=a.alert-link in page."}
+{"level":30,"time":"2025-06-18T01:15:02.625Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:02.634Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:02.635Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=a.alert-link in page."}
+{"level":30,"time":"2025-06-18T01:15:02.707Z","pid":15588,"hostname":"Hermes","msg":"Retrieved text for element css=a.alert-link containing Cadastro realizado com sucesso"}
+{"level":30,"time":"2025-06-18T01:15:02.707Z","pid":15588,"hostname":"Hermes","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:02.719Z","pid":15588,"hostname":"Hermes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:02.720Z","pid":15588,"hostname":"Hermes","Take screenshot with options: ":{"path":"C:\\Users\\abiol\\OneDrive\\CompassDocs\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\usuarios\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T01:15:03.302Z","pid":15588,"hostname":"Hermes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:03.333Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.344Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.363Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.383Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.390Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:03.392Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:03.403Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:03.407Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:03.418Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.427Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.444Z","pid":15588,"hostname":"Hermes","msg":"Changed active context"}
+{"level":30,"time":"2025-06-18T01:15:03.444Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=060df721-e8a0-4359-ac15-bcbbc4ee4b88"}
+{"level":30,"time":"2025-06-18T01:15:03.444Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:03.513Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.521Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.533Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=060df721-e8a0-4359-ac15-bcbbc4ee4b88"}
+{"level":30,"time":"2025-06-18T01:15:03.533Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:03.543Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:03.545Z","pid":15588,"hostname":"Hermes","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-06-18T01:15:03.652Z","pid":15588,"hostname":"Hermes","msg":"End of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:03.740Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.746Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:03.769Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:03.781Z","pid":15588,"hostname":"Hermes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T01:15:03.770Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:03.781Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:05.139Z","pid":15588,"hostname":"Hermes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T01:15:05.139Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:06.272Z","pid":15588,"hostname":"Hermes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:06.340Z","pid":15588,"hostname":"Hermes","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:07.476Z","pid":15588,"hostname":"Hermes","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:07.496Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:07.497Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:07.562Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:07.574Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:07.574Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:07.629Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:07.638Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T01:15:07.638Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:07.692Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:07.701Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:07.702Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T01:15:07.748Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:07.757Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:07.757Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=checkbox in page."}
+{"level":30,"time":"2025-06-18T01:15:08.647Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:08.660Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:08.661Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T01:15:08.756Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:08.771Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:08.772Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:09.638Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:09.646Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:09.646Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:09.703Z","pid":15588,"hostname":"Hermes","msg":"Retrieved text for element css=.alert containing ×\nCadastro realizado com sucesso"}
+{"level":30,"time":"2025-06-18T01:15:09.703Z","pid":15588,"hostname":"Hermes","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:09.716Z","pid":15588,"hostname":"Hermes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:09.717Z","pid":15588,"hostname":"Hermes","Take screenshot with options: ":{"path":"C:\\Users\\abiol\\OneDrive\\CompassDocs\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\usuarios\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T01:15:10.151Z","pid":15588,"hostname":"Hermes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:10.164Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:10.165Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:10.177Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:10.177Z","pid":15588,"hostname":"Hermes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T01:15:10.583Z","pid":15588,"hostname":"Hermes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T01:15:10.585Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:12.041Z","pid":15588,"hostname":"Hermes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:12.052Z","pid":15588,"hostname":"Hermes","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:13.166Z","pid":15588,"hostname":"Hermes","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:14.160Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:14.635Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:14.761Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:14.775Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:14.775Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:14.818Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:14.827Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:14.827Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T01:15:14.878Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:14.892Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:14.892Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T01:15:14.934Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:14.945Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=checkbox in page."}
+{"level":30,"time":"2025-06-18T01:15:14.944Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:15.385Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:15.410Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:15.411Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T01:15:15.490Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:15.505Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:15.506Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:16.981Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:16.989Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:16.989Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:17.040Z","pid":15588,"hostname":"Hermes","msg":"Retrieved text for element css=.alert containing ×\nEste email já está sendo usado"}
+{"level":30,"time":"2025-06-18T01:15:17.040Z","pid":15588,"hostname":"Hermes","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:17.054Z","pid":15588,"hostname":"Hermes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:17.054Z","pid":15588,"hostname":"Hermes","Take screenshot with options: ":{"path":"C:\\Users\\abiol\\OneDrive\\CompassDocs\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\usuarios\\browser\\screenshot\\robotframework-browser-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T01:15:17.450Z","pid":15588,"hostname":"Hermes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:17.470Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.494Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.503Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.514Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.520Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.521Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.533Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.534Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.548Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.556Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.563Z","pid":15588,"hostname":"Hermes","msg":"Changed active context"}
+{"level":30,"time":"2025-06-18T01:15:17.563Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=21bfb946-282e-4510-bfd6-c97a7d53f4f3"}
+{"level":30,"time":"2025-06-18T01:15:17.563Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:17.572Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.581Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.588Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=bd34f23c-d561-460a-9953-d7a311f26d94"}
+{"level":30,"time":"2025-06-18T01:15:17.588Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:17.636Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:17.636Z","pid":15588,"hostname":"Hermes","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-06-18T01:15:17.690Z","pid":15588,"hostname":"Hermes","msg":"End of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:17.705Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.720Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.727Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.728Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.739Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.740Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.750Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.759Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.765Z","pid":15588,"hostname":"Hermes","msg":"Changed active context"}
+{"level":30,"time":"2025-06-18T01:15:17.765Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=21bfb946-282e-4510-bfd6-c97a7d53f4f3"}
+{"level":30,"time":"2025-06-18T01:15:17.765Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:17.774Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.780Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.786Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=21bfb946-282e-4510-bfd6-c97a7d53f4f3"}
+{"level":30,"time":"2025-06-18T01:15:17.786Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:17.793Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:17.793Z","pid":15588,"hostname":"Hermes","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-06-18T01:15:17.829Z","pid":15588,"hostname":"Hermes","msg":"End of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:17.850Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.855Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:17.900Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.901Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:17.916Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:17.916Z","pid":15588,"hostname":"Hermes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T01:15:18.817Z","pid":15588,"hostname":"Hermes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T01:15:18.817Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:20.845Z","pid":15588,"hostname":"Hermes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:20.867Z","pid":15588,"hostname":"Hermes","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:22.137Z","pid":15588,"hostname":"Hermes","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:22.149Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:22.150Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:22.213Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:22.226Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:22.227Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:22.265Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:22.275Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:22.275Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T01:15:22.370Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:22.380Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:22.380Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T01:15:22.420Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:22.429Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=checkbox in page."}
+{"level":30,"time":"2025-06-18T01:15:22.429Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:23.522Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:23.637Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:23.637Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T01:15:23.728Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:23.745Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:23.745Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:24.696Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:24.705Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:24.705Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:24.761Z","pid":15588,"hostname":"Hermes","msg":"Retrieved text for element css=.alert containing ×\nEmail é obrigatório"}
+{"level":30,"time":"2025-06-18T01:15:24.761Z","pid":15588,"hostname":"Hermes","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:24.775Z","pid":15588,"hostname":"Hermes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:24.775Z","pid":15588,"hostname":"Hermes","Take screenshot with options: ":{"path":"C:\\Users\\abiol\\OneDrive\\CompassDocs\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\usuarios\\browser\\screenshot\\robotframework-browser-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T01:15:25.252Z","pid":15588,"hostname":"Hermes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:25.271Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.282Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.297Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.307Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.314Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:25.315Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:25.335Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:25.336Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:25.345Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.352Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.358Z","pid":15588,"hostname":"Hermes","msg":"Changed active context"}
+{"level":30,"time":"2025-06-18T01:15:25.358Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=33063857-4408-4d07-9446-46faf8b00987"}
+{"level":30,"time":"2025-06-18T01:15:25.358Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:25.367Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.373Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.379Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=33063857-4408-4d07-9446-46faf8b00987"}
+{"level":30,"time":"2025-06-18T01:15:25.379Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:25.386Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:25.386Z","pid":15588,"hostname":"Hermes","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-06-18T01:15:25.423Z","pid":15588,"hostname":"Hermes","msg":"End of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:25.454Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.459Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:25.489Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:25.490Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:25.504Z","pid":15588,"hostname":"Hermes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T01:15:25.504Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:26.060Z","pid":15588,"hostname":"Hermes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T01:15:26.067Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:27.108Z","pid":15588,"hostname":"Hermes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:27.121Z","pid":15588,"hostname":"Hermes","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:28.153Z","pid":15588,"hostname":"Hermes","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:28.165Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:28.165Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:28.231Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:28.243Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:28.243Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:28.277Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:28.289Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T01:15:28.289Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:28.356Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:28.365Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:28.366Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T01:15:28.398Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:28.408Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:28.408Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=checkbox in page."}
+{"level":30,"time":"2025-06-18T01:15:28.661Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:28.677Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:28.677Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T01:15:28.753Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:28.764Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:28.764Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:28.995Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:29.005Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:29.005Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=.alert in page."}
+{"level":30,"time":"2025-06-18T01:15:29.065Z","pid":15588,"hostname":"Hermes","msg":"Retrieved text for element css=.alert containing ×\nNome é obrigatório"}
+{"level":30,"time":"2025-06-18T01:15:29.065Z","pid":15588,"hostname":"Hermes","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:29.080Z","pid":15588,"hostname":"Hermes","Take screenshot with options: ":{"path":"C:\\Users\\abiol\\OneDrive\\CompassDocs\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\usuarios\\browser\\screenshot\\robotframework-browser-screenshot-5.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T01:15:29.080Z","pid":15588,"hostname":"Hermes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:29.516Z","pid":15588,"hostname":"Hermes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:29.586Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.599Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.621Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.628Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.634Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:29.635Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:29.647Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:29.648Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:29.656Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.662Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.669Z","pid":15588,"hostname":"Hermes","msg":"Changed active context"}
+{"level":30,"time":"2025-06-18T01:15:29.670Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=65cc583e-46ee-4cbb-ae30-564bd0095194"}
+{"level":30,"time":"2025-06-18T01:15:29.670Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:29.688Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.694Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.701Z","pid":15588,"hostname":"Hermes","msg":"Changing current active page: page=65cc583e-46ee-4cbb-ae30-564bd0095194"}
+{"level":30,"time":"2025-06-18T01:15:29.701Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:29.708Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:29.708Z","pid":15588,"hostname":"Hermes","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-06-18T01:15:29.746Z","pid":15588,"hostname":"Hermes","msg":"End of node method closePage"}
+{"level":30,"time":"2025-06-18T01:15:29.770Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.775Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:29.825Z","pid":15588,"hostname":"Hermes","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:29.827Z","pid":15588,"hostname":"Hermes","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-18T01:15:29.840Z","pid":15588,"hostname":"Hermes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:29.840Z","pid":15588,"hostname":"Hermes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T01:15:30.495Z","pid":15588,"hostname":"Hermes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T01:15:30.495Z","pid":15588,"hostname":"Hermes","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T01:15:32.148Z","pid":15588,"hostname":"Hermes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T01:15:32.160Z","pid":15588,"hostname":"Hermes","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:33.233Z","pid":15588,"hostname":"Hermes","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T01:15:33.244Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:33.244Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:33.304Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:33.315Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:33.316Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T01:15:33.352Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:33.362Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:33.362Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T01:15:33.418Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:33.428Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T01:15:33.428Z","pid":15588,"hostname":"Hermes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:33.468Z","pid":15588,"hostname":"Hermes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T01:15:33.477Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:33.477Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=checkbox in page."}
+{"level":30,"time":"2025-06-18T01:15:34.397Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:34.416Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:34.416Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T01:15:34.522Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:34.539Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:34.539Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=a.alert-link in page."}
+{"level":30,"time":"2025-06-18T01:15:35.422Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:35.453Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:35.454Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=a.alert-link in page."}
+{"level":30,"time":"2025-06-18T01:15:35.514Z","pid":15588,"hostname":"Hermes","msg":"Retrieved text for element css=a.alert-link containing Cadastro realizado com sucesso"}
+{"level":30,"time":"2025-06-18T01:15:35.514Z","pid":15588,"hostname":"Hermes","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-18T01:15:35.530Z","pid":15588,"hostname":"Hermes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:35.530Z","pid":15588,"hostname":"Hermes","Take screenshot with options: ":{"path":"C:\\Users\\abiol\\OneDrive\\CompassDocs\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\usuarios\\browser\\screenshot\\robotframework-browser-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T01:15:36.051Z","pid":15588,"hostname":"Hermes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:36.066Z","pid":15588,"hostname":"Hermes","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:36.066Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=[data-testid=\"listar-usuarios\"] in page."}
+{"level":30,"time":"2025-06-18T01:15:39.023Z","pid":15588,"hostname":"Hermes","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T01:15:39.031Z","pid":15588,"hostname":"Hermes","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T01:15:39.031Z","pid":15588,"hostname":"Hermes","msg":"Strict mode is enabled, find Locator with css=[data-testid=\"listar-usuarios\"] in page."}
+{"level":30,"time":"2025-06-18T01:15:39.122Z","pid":15588,"hostname":"Hermes","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T01:15:39.162Z","pid":15588,"hostname":"Hermes","Take screenshot with options: ":{"path":"C:\\Users\\abiol\\OneDrive\\CompassDocs\\Sprint 7\\Semana 14\\serverest-testes-web\\results\\usuarios\\browser\\screenshot\\robotframework-browser-screenshot-7.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T01:15:39.161Z","pid":15588,"hostname":"Hermes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:40.132Z","pid":15588,"hostname":"Hermes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T01:15:40.145Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-18T01:15:40.216Z","pid":15588,"hostname":"Hermes","msg":"Removed page=ee395bd6-2364-4bc9-9f93-4701f28fe00a from context=becb8c19-97f2-4bd2-9872-8e9734654995 page stack"}
+{"level":30,"time":"2025-06-18T01:15:40.380Z","pid":15588,"hostname":"Hermes","msg":"Removed page=3c9ff5db-cd64-4f09-8e54-b7a8e0f1e499 from context=becb8c19-97f2-4bd2-9872-8e9734654995 page stack"}
+{"level":30,"time":"2025-06-18T01:15:42.046Z","pid":15588,"hostname":"Hermes","msg":"End of node method closeAllBrowsers"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-18T01:15:42.165Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:42.166Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:42.178Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-18T01:15:42.178Z","pid":15588,"hostname":"Hermes","msg":"End of node method closeAllBrowsers"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\abiol\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-18T01:15:42.324Z","pid":15588,"hostname":"Hermes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:42.324Z","pid":15588,"hostname":"Hermes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T01:15:42.731Z","pid":15588,"hostname":"Hermes","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-18T01:15:42.731Z","pid":15588,"hostname":"Hermes","msg":"End of node method closeAllBrowsers"}
