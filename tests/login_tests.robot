@@ -15,7 +15,6 @@ CT001 - Login com sucesso (usuário recém-cadastrado)
     Fill Login Form           ${EMAIL_CAD}    ${PASS_CAD}
     Validate Successful Login
     Take Screenshot
-    Fechar Navegador
 
 CT002 - Login com senha incorreta
     [Tags]    senha_incorreta
@@ -23,7 +22,6 @@ CT002 - Login com senha incorreta
     Fill Login Form           ${EMAIL_CAD}    senha_errada
     Validate Specific Error Message    Email e/ou senha inválidos
     Take Screenshot 
-    Fechar Navegador
 
 CT003 - Login com campos vazios
     [Tags]    campos_vazios
@@ -33,4 +31,3 @@ CT003 - Login com campos vazios
     Validate Specific Error Message    Email é obrigatório
     Validate Specific Error Message    Password é obrigatório
     Take Screenshot
-    Fechar Navegador
