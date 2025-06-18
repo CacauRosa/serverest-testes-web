@@ -19,7 +19,5 @@ CT-003 - Ausência do campo obrigatório email
 CT-004 - Ausência do campo obrigatório nome
     Register User Without Name
 
-# O campo de exclusão ainda não foi incluído.
-# CT-005 - Deletar usuário existente
-#    Generate Random User Data
-#    Delete Registered Use
+CT-005 - Listar todos os usuários cadastrados
+    List All Users
