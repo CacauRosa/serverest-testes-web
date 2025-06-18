@@ -2,7 +2,6 @@
 Library        Browser
 
 Resource       ../variables/variables.resource
-Resource       carrinho_keywords.resource
 Resource       login_keywords.resource
 Resource       produtos_keywords.resource
 Resource       usuarios_keywords.resource
@@ -11,10 +10,6 @@ Resource       usuarios_keywords.resource
 Start Session
     New Browser     browser=chromium      headless=False
     New Page        ${BASE_URL}
-
-Open Browser
-    New Browser    headless=False
-    New Page       https://compassuolfront.serverest.dev/
 
 Go To Login Page
     Wait For Elements State    text=login    visible

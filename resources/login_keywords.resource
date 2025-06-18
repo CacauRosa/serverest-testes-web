@@ -1,3 +1,8 @@
+
+*** Settings ***
+Resource        base.resource
+
+
 *** Keywords ***
 
 Generate Random User Data

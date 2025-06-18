@@ -8,7 +8,7 @@ Com base nos conteúdos estudados ao longo do curso Robot eXpress e nos exercíc
 
 Cada integrante da squad ficou responsável por implementar **ao menos dois casos de teste** utilizando os recursos abordados no curso.
 
-## 🛠️ Principais Ferramentas e Tecnologias Utilizadas
+## Principais Ferramentas e Tecnologias Utilizadas
 
 - [Robot Framework](https://robotframework.org/)
 - [Browser Library](https://github.com/MarketSquare/robotframework-browser)
@@ -25,6 +25,8 @@ Os testes foram organizados em arquivos `.robot`, cada um contendo cenários esp
 - Produtos
 - Carrinhos
 
+**Obs**: O endpoint /carrinho está em construção na aplicação web do ServeRest no momento da realização dos testes. Portanto, não é possível automatizá-la.
+
 Cada cenário foi implementado com foco em boas práticas de automação, como:
 
 - Clareza nas keywords
@@ -37,7 +39,7 @@ Cada cenário foi implementado com foco em boas práticas de automação, como:
 - [Ádony Lagares](https://github.com/adony-lagares) - Login
 - [Ana Carolina Rosa](https://github.com/CacauRosa) - Produtos
 - [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) - Usuários
-- [Marcos Paulo](https://github.com/Marcosdev03) - Carrinhos
+- [Marcos Paulo](https://github.com/Marcosdev03) - Produtos
 
 ## Considerações Finais
 
