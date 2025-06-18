@@ -18,7 +18,7 @@ Go To With Button
 
 Check If In Page
     [Arguments]    ${page_text}
-    Get Text    css=h1    equal    ${page_text}
+    Browser.Get Text    css=h1    equal    ${page_text}
 
 Generate Random Product Data
     ${nome}          FakerLibrary.Word
