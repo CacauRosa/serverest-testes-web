@@ -1,9 +1,15 @@
 *** Settings ***
 Documentation    Arquivo de armazenamento de keywords globais
+
 Library          Browser
 Library          RequestsLibrary
 Library          FakerLibrary
+Library          Collections
+
 Resource         ../variables/variables.resource
+Resource         login_keywords.resource
+Resource         produtos_keywords.resource
+Resource         usuarios_keywords.resource
 
 *** Keywords ***
 

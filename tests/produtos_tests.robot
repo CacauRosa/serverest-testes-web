@@ -1,13 +1,14 @@
 *** Settings ***
-Documentation        Cenários de testes de produtos
-Resource             ../resources/produtos_keywords.resource
+Documentation        Suite de testes para a funcionalidade de produtos na interface web.
+
+Resource             ../resources/base.resource
 
 Test Setup           Start Session
-Test Teardown        Take Screenshot
+Test Teardown        Fechar Navegador
 
 *** Test Cases ***
 CT001 - Deve listar produtos cadastrados a partir da aba "Home"
-    [Tags]    listar
+    [Tags]    listar_produtos
 
     Generate Random User Data
     Register New User
@@ -17,7 +18,7 @@ CT001 - Deve listar produtos cadastrados a partir da aba "Home"
     Check If In Page     Lista dos Produtos
 
 CT002 - Deve listar produtos cadastrados a partir do menu de navegação
-    [Tags]    listar
+    [Tags]    listar_produtos
 
     New User and Login
 
@@ -42,7 +43,7 @@ CT004 - Deve acessar página de cadastro a partir do menu de navegação
 
 
 CT005 - Deve cadastrar produto com sucesso
-    [Tags]    sucesso_cadastro
+    [Tags]    sucesso_cadastro_produto
     
     New User and Login
 
@@ -55,7 +56,7 @@ CT005 - Deve cadastrar produto com sucesso
     Product Should Be Registered    ${product_data}[nome]
 
 CT006 - Não deve cadastrar produto com nome duplicado
-    [Tags]    dup_cadastro
+    [Tags]    dup_cadastro_produto
 
     New User and Login
 
@@ -75,7 +76,7 @@ CT006 - Não deve cadastrar produto com nome duplicado
     Alert should be                 Já existe produto com esse nome
 
 CT007 - Testar Busca de Produto Existente
-    [Tags]    busca
+    [Tags]    busca_produto
     New User and Login
 
     # Primeiro cadastramos um produto para garantir que existe
@@ -96,7 +97,7 @@ CT007 - Testar Busca de Produto Existente
     Wait For Elements State    xpath=//td[text()="${nome_produto}"]    visible    5
 
 CT008 - Testar Busca de Produto Inexistente
-    [Tags]    busca
+    [Tags]    busca_produto
     New User and Login
 
     # Vai para a página de produtos
@@ -112,33 +113,20 @@ CT008 - Testar Busca de Produto Inexistente
     Should Be Equal As Numbers    ${count}    0    O produto não deveria existir
 
 CT009 - Testar Exclusão de Produto Existente
-    [Tags]    exclusao
+    [Tags]    exclusao_produto
     New User and Login
     
     # Primeiro cadastramos um produto para garantir que existe
     Go To With Button    css=a[data-testid=cadastrar-produtos]
     Check If In Page     Cadastro de Produtos
     Generate Random Product Data
-    # Adicionamos um prefixo único para garantir que o nome seja único
-    ${nome_unico}=    Set Variable    TESTE_EXCLUSAO_${product_data}[nome]
-    Set To Dictionary    ${product_data}    nome=${nome_unico}
-    Submit Task Form For Product    ${product_data}
-    Check If In Page     Lista dos Produtos
-    Product Should Be Registered    ${product_data}[nome]
     
     # Agora excluímos o produto que acabamos de criar
-    ${nome_produto}=    Set Variable    ${product_data}[nome]
-    
-    # Clicando no botão de exclusão do produto específico que acabamos de criar
-    Click    xpath=//td[text()="${nome_produto}"]/following-sibling::td//button[contains(@class, "btn-danger")]
-    
-    # Não há modal de confirmação, então verificamos diretamente se o produto foi excluído
-    Sleep    2
+    Delete product
     
     # Recarregamos a página para garantir que a lista está atualizada
     Go To With Button    css=a[data-testid=listar-produtos]
     Check If In Page     Lista dos Produtos
     
     # Verificamos que o produto foi excluído
-    ${count}=    Get Element Count    xpath=//td[text()="${nome_produto}"]
-    Should Be Equal As Numbers    ${count}    0    O produto não foi excluído
+    Product Should Be Excluded

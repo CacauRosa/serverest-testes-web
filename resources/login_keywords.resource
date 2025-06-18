@@ -1,12 +1,10 @@
 
 *** Settings ***
 Documentation        Base file with variables, keywords, and utility functions used in login functionality.
-Resource             base.resource
-Resource             usuarios_keywords.resource
 
+Resource             base.resource
 
 *** Keywords ***
-
 New Login User
     Generate Random User Data
     Register New User
