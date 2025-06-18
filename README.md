@@ -17,6 +17,7 @@
 - [Ambiente e Requisitos de Instalação](#ambiente-e-requisitos-de-instalação)
 - [Participantes da Squad Gotham](#participantes-da-squad-gotham)
 - [Considerações Finais](#considerações-finais)
+- [Estrutura do Projeto](#estrutura-do-projeto)
 
 ---
 
@@ -42,10 +43,34 @@ Cada integrante da squad ficou responsável por implementar **ao menos dois caso
 
 Os testes foram organizados em arquivos `.robot`, cada um contendo cenários específicos voltados para as funcionalidades da aplicação:
 
-- Login
-- Usuários
-- Produtos
-- Carrinhos
+---
+
+## Estrutura do Projeto
+
+```
+serverest-testes-web/
+|-- resources/
+|   |-- base.resource                 # Keywords e configurações globais
+|   |-- login_keywords.resource       # Keywords específicas para testes de login
+|   |-- produtos_keywords.resource    # Keywords específicas para testes de produtos
+|   `-- usuarios_keywords.resource    # Keywords específicas para testes de usuários
+|
+|-- tests/
+|   |-- login_tests.robot             # Casos de teste para funcionalidade de login
+|   |-- produtos_tests.robot          # Casos de teste para funcionalidade de produtos
+|   `-- usuarios_tests.robot          # Casos de teste para funcionalidade de usuários
+|
+|-- variables/
+|   `-- variables.resource            # Variáveis globais utilizadas nos testes
+|
+|-- results/                          # Resultados da execução dos testes
+|   |-- login/                        # Resultados dos testes de login
+|   |-- produtos/                     # Resultados dos testes de produtos
+|   `-- usuarios/                     # Resultados dos testes de usuários
+|
+|-- README.md                         # Documentação do projeto
+`-- requirements.txt                  # Dependências do projeto
+```
 
 **Obs**: O endpoint `/carrinho` está em construção na aplicação web do ServeRest no momento da realização dos testes. Portanto, não é possível automatizá-lo.
 
