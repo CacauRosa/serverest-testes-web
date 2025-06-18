@@ -39,13 +39,9 @@ Cada integrante da squad ficou responsável por implementar **ao menos dois caso
 
 ---
 
-## Estrutura dos Testes
+## Estrutura do Projeto
 
 Os testes foram organizados em arquivos `.robot`, cada um contendo cenários específicos voltados para as funcionalidades da aplicação:
-
----
-
-## Estrutura do Projeto
 
 ```
 serverest-testes-web/
