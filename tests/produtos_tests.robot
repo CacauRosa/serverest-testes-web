@@ -7,7 +7,7 @@ Test Setup           Start Session
 Test Teardown        Take Screenshot
 
 *** Test Cases ***
-Deve listar produtos cadastrados a partir da aba "Home"
+CT001 - Deve listar produtos cadastrados a partir da aba "Home"
     [Tags]    listar
 
     Generate Random User Data
@@ -17,7 +17,7 @@ Deve listar produtos cadastrados a partir da aba "Home"
     Go To With Button    css=a[data-testid=listarProdutos]
     Check If In Page     Lista dos Produtos
 
-Deve listar produtos cadastrados a partir do menu de navegação
+CT002 - Deve listar produtos cadastrados a partir do menu de navegação
     [Tags]    listar
 
     New User and Login
@@ -25,7 +25,7 @@ Deve listar produtos cadastrados a partir do menu de navegação
     Go To With Button    css=a[data-testid=listar-produtos]
     Check If In Page     Lista dos Produtos
 
-Deve acessar página de cadastro a partir da aba "Home"
+CT003 - Deve acessar página de cadastro a partir da aba "Home"
     [Tags]    ir_cadastro
 
     New User and Login
@@ -33,7 +33,7 @@ Deve acessar página de cadastro a partir da aba "Home"
     Go To With Button    css=a[data-testid=cadastrarProdutos]
     Check If In Page     Cadastro de Produtos
 
-Deve acessar página de cadastro a partir do menu de navegação
+CT004 - Deve acessar página de cadastro a partir do menu de navegação
     [Tags]    ir_cadastro
 
     New User and Login
@@ -42,7 +42,7 @@ Deve acessar página de cadastro a partir do menu de navegação
     Check If In Page     Cadastro de Produtos
 
 
-Deve cadastrar produto com sucesso
+CT005 - Deve cadastrar produto com sucesso
     [Tags]    sucesso_cadastro
 
     New User and Login
@@ -55,7 +55,7 @@ Deve cadastrar produto com sucesso
     Check If In Page                Lista dos Produtos
     Product Should Be Registered    ${product_data}[nome]
 
-Não deve cadastrar produto com nome duplicado
+CT006 - Não deve cadastrar produto com nome duplicado
     [Tags]    dup_cadastro
 
     New User and Login
