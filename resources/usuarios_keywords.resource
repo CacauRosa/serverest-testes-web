@@ -52,4 +52,3 @@ List All Users
     Wait For Elements State    ${BTN_LIST_USERS}    visible    timeout=15s
     Click    ${BTN_LIST_USERS}
     Take Screenshot
-    Fechar Navegador
